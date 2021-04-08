@@ -1,0 +1,5 @@
+edu.eci.arsw.openweather
+edu.eci.arsw.openweather.controller
+edu.eci.arsw.openweather.models
+edu.eci.arsw.openweather.services
+edu.eci.arsw.openweather.services.impl
