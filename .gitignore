@@ -276,3 +276,7 @@ sketch
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij,visualstudiocode,eclipse,maven,macos,react,java,netbeans
+
+
+.project
+.classpath
