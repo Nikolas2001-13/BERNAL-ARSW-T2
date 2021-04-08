@@ -40,7 +40,7 @@ app = (function (){
 
     function _initMap(data){
         map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
+            center: {lat: data.coord.lat, lng: data.coord.lon},
             zoom: 8
         });
         plotMarkers(data);

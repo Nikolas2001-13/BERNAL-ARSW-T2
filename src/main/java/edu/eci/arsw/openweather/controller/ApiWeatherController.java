@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import edu.eci.arsw.openweather.services.CityWeatherServices;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class ApiWeatherController {
     
     @Autowired
