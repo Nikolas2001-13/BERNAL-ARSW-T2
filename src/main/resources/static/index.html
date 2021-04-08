@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Clima de Ciudades</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/webjars/bootstrap/4.5.2/css/bootstrap.min.css" />
+</head>
+
+<body>
+<h1 class="text-center">API OpenWeather</h1>
+<div class="row">
+    <form>
+        <div class="input-group ml-4">
+            <input class="m-2" placeholder="Nombre de la ciudad" id="city"/>
+            <button class="m-2 btn btn-primary" type="button" onclick="app.getWeatherByCity(city.value)">Buscar</button>
+        </div>
+    </form>
+</div>
+<div class="container" id="info" style="visibility: hidden">
+    <div class="row col-10">
+        <div class="card col-5 m-3">
+            <div class="card-header text-center">
+                <h5>Información General</h5>
+            </div>
+            <div class="row">
+                <label class="col-10" id="name"></label>
+                <label class="col-10" id="id"></label>
+                <label class="col-10" id="timezone"></label>
+                <label class="col-10" id="dt"></label>
+                <label class="col-10" id="clouds"></label>
+                <label class="col-10" id="visibility"></label>
+                <label class="col-10" id="base"></label>
+            </div>
+        </div>
+        <div class="card col-5 m-3">
+            <div class="card-header text-center">
+                <h5>Información Principal</h5>
+            </div>
+            <div class="row">
+                <label class="col-10" id="temp"></label>
+                <label class="col-10" id="feels"></label>
+                <label class="col-10" id="tmpmin"></label>
+                <label class="col-10" id="tmpmax"></label>
+                <label class="col-10" id="press"></label>
+                <label class="col-10" id="humed"></label>
+            </div>
+        </div>
+    </div>
+    <div class="row col-10">
+        <div class="card col-5 m-3">
+            <div class="card-header text-center">
+                <h5>Clima</h5>
+            </div>
+            <div class="row">
+                <label class="col-10" id="wid"></label>
+                <label class="col-10" id="main"></label>
+                <label class="col-10" id="descrp"></label>
+                <label class="col-10" id="icon"></label>
+            </div>
+        </div>
+        <div class="card col-5 m-3">
+            <div class="card-header text-center">
+                <h5>Coordenadas</h5>
+            </div>
+            <div class="row">
+                <label class="col-10" id="lat"></label>
+                <label class="col-10" id="lon"></label>
+            </div>
+        </div>
+    </div>
+    <div class="row col-10">
+        <div class="cardcol-5 m-3">
+            <div class="card-header text-center">
+                <h5>Información de Vientos</h5>
+            </div>
+            <div class="row">
+                <label class="col-10" id="speed"></label>
+                <label class="col-10" id="deg"></label>
+            </div>
+        </div>
+        <div class="card col-5 m-3">
+            <div class="card-header text-center">
+                <h5>SYS</h5>
+            </div>
+            <div class="row">
+                <label class="col-10" id="type"></label>
+                <label class="col-10" id="SYSid"></label>
+                <label class="col-10" id="country"></label>
+                <label class="col-10" id="sunrise"></label>
+                <label class="col-10" id="sunset"></label>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="map"></div>
+<script src="/webjars/jquery/jquery.min.js"></script>
+<script src="/js/app.js"></script>
+<script src="/style/style.css"></script>
+<script src="/webjars/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&language=en" type="text/javascript"></script>
+</body>
+</html>
