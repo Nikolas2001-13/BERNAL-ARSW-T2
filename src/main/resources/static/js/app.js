@@ -5,33 +5,33 @@ app = (function (){
 
 
     function _updateData(data){
-        $("#lblname").text("City: "+data.name);
-        $("#lblid").text("Id: "+data.id);
-        $("#lbltimezone").text("City: "+data.timezone);
-        $("#lbldt").text("Dt: "+data.dt);
-        $("#lblclouds").text("Clouds: "+data.clouds);
-        $("#lblvisibility").text("Visibility: "+data.visibility);
-        $("#lblbase").text("Base: "+data.base);
-        $("#lbllat").text("Lat: "+data.coord.lat);
-        $("#lbllon").text("Lon: "+data.coord.lon);
-        $("#lblwid").text("Id: "+data.weather.id);
-        $("#lblmain").text("Main: "+data.weather.main);
-        $("#lbldescrp").text("Description: "+data.weather.description);
-        $("#lblicon").text("Icon: "+data.weather.icon);
-        $("#lbltemp").text("Temp: "+data.main.temp);
-        $("#lblfeels").text("Feels like: "+data.main.feels_like);
-        $("#lbltmpmin").text("Temp min: "+data.main.temp_min);
-        $("#lbltmpmax").text("Temp max: "+data.main.temp_max);
-        $("#lblpress").text("Pressure: "+data.main.pressure);
-        $("#lblhumed").text("humidity: "+data.main.humidity);
-        $("#lblspeed").text("Speed: "+data.sys.temp);
-        $("#lbldeg").text("Deg: "+data.sys.id);
-        $("#lbltype").text("Type: "+data.wind.speed);
-        $("#lblSYSid").text("Id: "+data.wind.deg);
-        $("#lblcountry").text("Country: "+data.sys.country);
-        $("#lblsunrise").text("Sunrise: "+data.sys.sunrise);
-        $("#lblsunset").text("Sunset: "+data.sys.sunset);
-        document.getElementById("infow").style.visibility="visible";
+        $("#name").text("Ciudad: "+data.name);
+        $("#id").text("Id: "+data.id);
+        $("#timezone").text("Zona Horaria: "+data.timezone);
+        $("#dt").text("Dt: "+data.dt);
+        $("#clouds").text("Nubes: "+data.clouds);
+        $("#visibility").text("Visivilidad: "+data.visibility+"m");
+        $("#base").text("Base: "+data.base);
+        $("#lat").text("Latitud: "+data.coord.lat);
+        $("#lon").text("Longitud: "+data.coord.lon);
+        $("#wid").text("Id: "+data.weather.id);
+        $("#main").text("Main: "+data.weather.main);
+        $("#descrp").text("Descripción: "+data.weather.description);
+        $("#icon").text("Icono: "+data.weather.icon);
+        $("#temp").text("Temperatura: "+data.main.temp+"K");
+        $("#feels").text("Se sienten como: "+data.main.feels_like+"K");
+        $("#tmpmin").text("Temperatura min: "+data.main.temp_min+"K");
+        $("#tmpmax").text("Temperatura max: "+data.main.temp_max+"K");
+        $("#press").text("Presion: "+data.main.pressure+"hPa");
+        $("#humed").text("Humedad: "+data.main.humidity+"%");
+        $("#speed").text("Velocidad: "+data.sys.temp+"m/s");
+        $("#deg").text("Deg: "+data.sys.id);
+        $("#type").text("Tipo: "+data.wind.speed);
+        $("#SYSid").text("Id: "+data.wind.deg);
+        $("#country").text("País: "+data.sys.country);
+        $("#sunrise").text("Amanecer: "+data.sys.sunrise);
+        $("#sunset").text("Atardecer: "+data.sys.sunset);
+        document.getElementById("info").style.visibility="visible";
         _initMap(data)
     }
 
