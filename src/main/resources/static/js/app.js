@@ -49,6 +49,7 @@ app = (function (){
     function plotMarkers(m){
         markers = [];
         bounds = new google.maps.LatLngBounds();
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
         m.forEach(function (marker) {
             var position = new google.maps.LatLng(marker.coord.lat, marker.coord.lng);
@@ -57,6 +58,7 @@ app = (function (){
                 new google.maps.Marker({
                     position: position,
                     map: map,
+                    icon: iconBase,
                     animation: google.maps.Animation.DROP
                 })
             );
