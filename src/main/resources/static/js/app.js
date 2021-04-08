@@ -51,7 +51,7 @@ app = (function (){
         bounds = new google.maps.LatLngBounds();
 
         m.forEach(function (marker) {
-            var position = new google.maps.LatLng(marker.coord.lat, marker.coord.lan);
+            var position = new google.maps.LatLng(marker.coord.lat, marker.coord.lng);
 
             markers.push(
                 new google.maps.Marker({
