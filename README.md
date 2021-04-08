@@ -1,5 +1,32 @@
 # Escuela Colombiana de Ingeniería Julio Garavito - Arquitecturas de Software ARSW - Parcial Segundo Tercio
 
+## Criterios de Entrega
+
+### Diseño:
+	El diseño de la aplicación se basa en REST, el cual está consumiendo la API OpenWeather, con la cual se extraen los datos brindados por esta y mostrados en el front.
+
+## Instrucciones de Ejecución en Local
+
+1. Clonar repositorio:
+	```
+	$ git clone https://github.com/Nikolas2001-13/BERNAL-ARSW-T2
+	```
+2. Ejecutar para iniciar:
+	```
+	mvn clean install
+	mvn package
+	mvn spring-boot:run
+	```
+3. Ingresar a la dirección "http://localhost:8080"
+
+## Despliegue Heroku:
+
+[![Deployed to Heroku](https://www.herokucdn.com/deploy/button.png)](https://bernal-arsw-t2.herokuapp.com)
+
+## GitHub URL:
+
+[GitHub](https://github.com/Nikolas2001-13/BERNAL-ARSW-T2)
+
 ## Preparación para el Parcial
 
 Con el objetivo de preparar el examen final del segundo tercio, por favor siga las siguientes instrucciones.
